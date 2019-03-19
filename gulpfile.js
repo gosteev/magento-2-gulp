@@ -48,11 +48,11 @@ var gulp = require('gulp'),
    Global configs of Magento2
    ========================================================================== */
 // If you are using Magento 2.2.2 or heigher height Un-comment below two line 
-///var filesRouter = require('./dev/tools/grunt/tools/files-router');
-//filesRouter.set('themes','./dev/tools/grunt/configs/themes' );
+var filesRouter = require('./dev/tools/grunt/tools/files-router');
+filesRouter.set('themes','./dev/tools/grunt/configs/themes' );
 
 
-var themesConfig = require('./dev/tools/grunt/configs/themes'),
+var themesConfig = require('./dev/tools/grunt/configs/themes.loc'),
 	lessConfig = require('./dev/tools/grunt/configs/less').options;
 
 
